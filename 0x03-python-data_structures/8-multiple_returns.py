@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 # A function to return a tuple with the length
 # of a string and its first character
 
