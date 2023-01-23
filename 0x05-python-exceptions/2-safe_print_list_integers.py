@@ -10,7 +10,7 @@ def safe_print_list_integers(my_list=[], x=0):
     real_num = 0
     for idx in range(x):
         try:
-            print("{}".format(my_list[idx]), end="")
+            print("{:d}".format(my_list[idx]), end="")
             real_num += 1
         except (ValueError, TypeError):
             continue
