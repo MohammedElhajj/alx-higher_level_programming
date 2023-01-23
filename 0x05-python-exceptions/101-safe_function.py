@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# A function to execute a function safely
+
 def safe_function(fct, *args):
     import sys
     try:
