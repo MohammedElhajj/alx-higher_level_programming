@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import sys
-
 def safe_print_integer_err(value):
     """ A function to print  an integer with "{:d}".format()
     Args:
@@ -9,6 +7,7 @@ def safe_print_integer_err(value):
         True if value has been correctly printed otherwise returns
         False and prints in stderr: the error precede by Exception
     """
+    import sys
     try:
         print("{:d}".format(value))
         return (True)
