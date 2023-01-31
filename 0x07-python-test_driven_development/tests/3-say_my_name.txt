@@ -1,0 +1,39 @@
+This test file checks a function that prints a name
+
+Import module
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Check the output
+>>> say_my_name("John", "Smith")
+My name is John Smith
+>>> say_my_name("Walter Jay", "White")
+My name is Walter Jay White
+
+If there is no last name provided an empty string will be
+printed insted of it
+>>> say_my_name("Bob")
+My name is Bob 
+
+Rise Error if first name is not a string
+>>> say_my_name(8, "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+Rise Error if last name is not a string
+>>> say_my_name("John", 8)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+Rise Error if first and last names are not a string
+>>> say_my_name(8, 8)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+An empty string can be handled in this function and
+printed as empty string
+>>> say_my_name("")
+My name is 
