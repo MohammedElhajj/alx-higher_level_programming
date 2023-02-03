@@ -36,4 +36,4 @@ TypeError: first_name must be a string
 An empty string can be handled in this function and
 printed as empty string
 >>> say_my_name("")
-My name is
+My name is  
