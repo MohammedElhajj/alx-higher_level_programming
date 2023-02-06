@@ -1,0 +1,11 @@
+This test file check the module that creates a BaseGeometry class
+
+Import the module
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Create instance class
+>>> bg = BaseGeometry()
+
+Check passing a string and an integer
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
