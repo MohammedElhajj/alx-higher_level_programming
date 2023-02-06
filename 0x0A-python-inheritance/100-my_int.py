@@ -4,10 +4,10 @@
 
 class MyInt(int):
     """MyInt class that inherits from int"""
-    def __equal__(self, value):
+    def __eq__(self, value):
         """Invert the == operaor"""
-        return int.__nequal__(self, value)
+        return int.__ne__(self, value)
 
-    def __nequal__(self, value):
+    def __ne__(self, value):
         """Invert the != operator"""
-        return int.__equal__(self, value)
+        return int.__eq__(self, value)
