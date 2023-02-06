@@ -1,0 +1,38 @@
+This test file checks the module that creates a class named
+Mylist
+
+Import the module
+>>> Mylist = __import__('1-my_list').Mylist
+
+Check if the object can be created
+>>> my_list = Mylist()
+>>> pint(my_list)
+[]
+
+Check print_sorted
+>>> my_list = Mylist()
+>>> my_list.print_sorted()
+[]
+
+No arguments will be taken otherwise raise Error
+>>> my_list Mylist(2)
+Traceback (most recent call last):
+TypeError: 'int' object is not iterable
+
+Check the outputs
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4) 
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+Check the print of a sorted list
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+Check if the original list still unchanged  
+>>> print(my_list)
+[1, 4, 2, 3, 5] 
