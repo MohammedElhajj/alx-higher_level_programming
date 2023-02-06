@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module to define a class named MyList that inherits from list
+"""Module to define a class that inherits from list
 """
 
 
