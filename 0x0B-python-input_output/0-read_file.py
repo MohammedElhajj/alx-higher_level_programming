@@ -3,9 +3,7 @@
 
 
 def read_file(filename=""):
-    """Function to read a text file (UTF8)
-        and print it to stdout
-    
+    """Function to read a text file and print it to stdout  
     Args:
         filename(str): the File name
     """
